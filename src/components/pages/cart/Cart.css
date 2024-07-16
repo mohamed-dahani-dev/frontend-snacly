@@ -1,0 +1,107 @@
+.cart-items {
+  margin-top: 100px;
+}
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: var(--titleColor);
+  font-size: max(1.2vw, 12px);
+}
+.cart-items-item p {
+  margin-right: 20px;
+}
+.cart-items-title p {
+  margin-right: 20px;
+}
+.cart-items-item img {
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.cart-items-item .icon-close {
+  font-size: 1.3rem;
+  color: var(--subtitleColor);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.cart-items-item .icon-close:hover {
+  color: #dc143c;
+}
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: max(12vw, 20px);
+  color: var(--titleColor);
+}
+.cart-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-total button {
+  background-color: var(--mainColor);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0 40px 0;
+  color: #fff;
+}
+.cart-total button:hover {
+  background-color: #ff4d2d;
+}
+.cart-promocode {
+  flex: 1;
+}
+.cart-promocode p {
+  color: var(--subtitleColor);
+}
+.cart-promocode-input {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaeaea;
+  border-radius: 4px;
+}
+.cart-promocode-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.cart-promocode-input button {
+  width: max(10vw, 150px);
+  padding: 12px 5px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .cart-items-item img {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .cart-bottom {
+    flex-direction: column-reverse;
+  }
+  .cart-promocode {
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cart-items-item img {
+    width: 55px;
+  }
+}

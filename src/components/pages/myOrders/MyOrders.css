@@ -1,0 +1,46 @@
+.my-orders{
+    margin: 50px 0;
+}
+.my-orders .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+.my-orders .container .order{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--titleColor);
+    border: 1px solid var(--mainColor);
+    border-radius: 5px;
+}
+.my-orders .container .order .icon-box{
+    font-size: 35px;
+    color: var(--mainColor);
+}
+.my-orders .container .order .amount, .my-orders .container .order .status{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.my-orders .container .order button{
+    padding: 12px 0;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+@media screen and (max-width:750px) {
+    .my-orders .container .order{
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 20px;
+    }
+    .my-orders .container .order button{
+        font-size: 10px;
+    }
+}

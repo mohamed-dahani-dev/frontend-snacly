@@ -1,0 +1,67 @@
+/* 
+==================
+table of contents
+==================
+1- explore-menu
+*/
+
+/* 
+==================
+1- explore-menu
+==================
+*/
+
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 50px;
+}
+.explore-menu h1 {
+  font-weight: 500;
+  color: var(--titleColor);
+}
+.explore-menu .explore-menu-text {
+  color: var(--subtitleColor);
+  max-width: 60%;
+}
+.explore-menu .explore-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 20px 0;
+  overflow-x: scroll;
+}
+.explore-menu .explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+.explore-menu .explore-menu-list .explore-menu-list-item img {
+  width: 7.5vw;
+  min-width: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.1s;
+}
+.explore-menu .explore-menu-list .explore-menu-list-item p {
+  color: var(--subtitleColor);
+  margin-top: 10px;
+  font-size: max(1.4vw, 16px);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: 0.1s;
+}
+.explore-menu .explore-menu-list .explore-menu-list-item .active {
+  border: 3px solid var(--mainColor);
+  padding: 3px;
+}
+.explore-menu .explore-menu-list .explore-menu-list-item .active-p {
+  color: var(--mainColor);
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .explore-menu .explore-menu-text {
+    max-width: 100%;
+  }
+}

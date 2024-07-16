@@ -1,0 +1,66 @@
+/* 
+==================
+table of contents
+==================
+1- hero
+*/
+
+/* 
+==================
+1- hero
+==================
+*/
+
+.hero {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("../../assets/header_img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+.hero .hero-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  max-width: 60%;
+  bottom: 10%;
+  left: 7%;
+  animation: fadeIn 3s;
+}
+.hero .hero-content h2 {
+  font-weight: 500;
+  color: #fff;
+  font-size: max(5vw, 22px);
+}
+.hero .hero-content p {
+  font-size: 1.2vw;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.hero .hero-content button {
+  font-size: max(1vw, 15px);
+  color: #27272a;
+  padding: 1vw 2.3vw;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .hero .hero-content button {
+    font-size: max(1vw, 12px);
+    padding: 1.5vw 2.3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    height: 60vw;
+  }
+  .hero .hero-content p {
+    font-size: 1.5vw;
+  }
+}

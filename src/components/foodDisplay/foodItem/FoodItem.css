@@ -1,0 +1,107 @@
+.food-item {
+  width: 100%;
+  box-shadow: 0px 0px 10px var(--borderCard);
+  animation: fadeIn 1s;
+  transition: 0.1s;
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.food-item:hover {
+  transform: scale(1.04);
+}
+.food-item-image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+.food-item-info {
+  padding: 20px;
+}
+.food-item-info-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.food-item-info-rating-star {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--subtitleColor);
+}
+.food-item-info-rating-star p {
+  font-weight: 600;
+}
+.food-item-info-rating-star .icon-star {
+  color: #ffd700;
+}
+.food-item-info-rating-name {
+  color: var(--titleColor);
+  font-size: 20px;
+  font-weight: 500;
+}
+.food-item-desc {
+  color: var(--subtitleColor);
+  font-size: 12px;
+  letter-spacing: 0.1px;
+}
+.food-item-price {
+  color: var(--mainColor);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.food-item-img-container {
+  position: relative;
+}
+.food-item-img-container .add {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.food-item-img-container .add:hover {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.item-food-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.item-food-counter .icon-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #adff2f;
+  color: #008000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.item-food-counter .icon-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #ffd1d1;
+  color: #ff0000;
+  border-radius: 50%;
+  cursor: pointer;
+}
