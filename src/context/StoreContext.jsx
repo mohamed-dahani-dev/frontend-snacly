@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [foodList, setFoodList] = useState([]);
 
-  const url = "http://localhost:3000";
+  const url = "https://backend-snacly.onrender.com";
 
   const [token, setToken] = useState("");
   const [userName, setUserName] = useState("Your Name");
